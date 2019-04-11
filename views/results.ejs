@@ -1,0 +1,26 @@
+<%- include("header"); %>
+
+<h1>Results</h1>
+
+<div class="row" style="margin: 2rem">
+  <%  results.forEach(function(result){ %>
+  <div class="col-6" style="padding-right: 1rem; padding-bottom: 1rem">
+    <%= result.title %>
+  </div>
+  <div class="col-6" style="padding-right: 1rem; padding-bottom: 1rem">
+    <%= result.content %>
+  </div>
+
+  <%  }); %>
+  <div class="row">
+    <button type="button" name="button" onclick="myFunction(window.location.href);">Refresh</button>
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+  function myFunction(x) {
+    window.location.href = x;
+  }
+</script>
