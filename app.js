@@ -16,7 +16,7 @@ const MongoClient = require('mongodb').MongoClient;
 const dbName = 'wikiDB';
 const myCollection = "articles";
 const url1 = "mongodb://localhost:27017"; //connect to local mongodb
-const url2 = "mongodb+srv://admin-mj:Test123@cluster0-kou5b.mongodb.net/"; //connecto mongodb Atlas
+
 const client = new MongoClient(url1, {
   useNewUrlParser: true
 });
